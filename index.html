@@ -1,13 +1,11 @@
 <html>
-<head>
-</head>
-<body ng-app="app">
+<body>
 <div>
-    <div ng-controller="HelloController">
-        <label>Name</label>
-        <input type="text" ng-model="userName"/>
-        <button ng-click="sayHello()">Say Hi!</button>
-        <div ng-show="showHelloWords">Hi, {{userName}}!</div>
+    <div ng-controller="HelloController" id="app1">
+        <div>Message: {{message}}</div>
+    </div>
+    <div ng-controller="HelloController" id="app2">
+        <div>Message: {{message}}</div>
     </div>
 </div>
 <script src="./node_modules/angular/angular.js"></script>
